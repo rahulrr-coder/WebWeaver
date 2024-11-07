@@ -1,5 +1,6 @@
 let text = document.getElementById('text');
 let text2 = document.getElementById('text2');
+let button1 = document.getElementById('weave-button')
 let leaf = document.getElementById('leaf');
 let hill1 = document.getElementById('hill1');
 let hill2 = document.getElementById('hill2');
@@ -14,6 +15,7 @@ window.addEventListener('scroll', () => {
     // Adjust parallax effect based on scroll position
     text.style.transform = `translateY(${value * 0.5}px)`;
     text2.style.transform = `translateY(${value * 0.5}px)`;
+    button1.style.transform = `translateY(${value * 0.5}px)`;
     leaf.style.transform = `translate(${value * 1.5}px, ${value * -1.5}px)`;
     hill1.style.transform = `translateY(${value * -0.3}px)`;
     hill2.style.transform = `translateY(${value * -0.5}px)`;
