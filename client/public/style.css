@@ -101,6 +101,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .navigation a {
@@ -115,3 +116,5 @@ header {
         padding: 60px;
     }
 }
+
+
