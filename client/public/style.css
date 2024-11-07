@@ -91,6 +91,23 @@ header {
     margin-top: 10px;
 }
 
+.weave-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #359381;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weave-button:hover {
+    background-color: #2a6d56;
+    transform: translateY(-3px);
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
     .logo {
