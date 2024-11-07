@@ -3,31 +3,32 @@ body{
 }
 .head {
     display: flex;               
-    justify-content: center;      /* Center horizontally */
-    align-items: center;          /* Center vertically */
+    justify-content: center;      
+    align-items: center;          
     position: relative;
     margin-top: 100px;
-    color: burlywood;
+    color: black;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 .para {
     display: flex;
-    justify-content: center;       /* Center horizontally */
-    align-items: center;           /* Center vertically */
-    text-align: center;            /* Center text within <p> */
-    height: 10vh;                 /* Full viewport height for vertical centering */
-    font-size: 1.2rem;             /* Adjust font size */
-    line-height: 2;              /* Adjust line spacing */
-    padding: 20px;                 /* Add padding around text */
-    color: #333;                   /* Text color */
-        
+    justify-content: center;       
+    align-items: center;           
+    text-align: center;           
+    height: 10vh;                 
+    font-size: 1.2rem;            
+    line-height: 2;              
+    padding: 20px;                 
+    color: #333;                   
     font-family: Arial, sans-serif;
     margin-top: 100px;
 }
 
 .para p {
-    margin: 0;                     /* Remove default margin on <p> */
-    max-width: 600px;              /* Optional: Limit width for readability */
+    margin: 0;                     
+    max-width: 900px;              
 }
 
 
