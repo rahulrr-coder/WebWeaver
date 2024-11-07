@@ -1,0 +1,42 @@
+body{
+    background-color: #efe9e4;
+}
+.head {
+    display: flex;               
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    position: relative;
+    margin-top: 100px;
+    color: burlywood;
+    
+}
+.para {
+    display: flex;
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically */
+    text-align: center;            /* Center text within <p> */
+    height: 10vh;                 /* Full viewport height for vertical centering */
+    font-size: 1.2rem;             /* Adjust font size */
+    line-height: 2;              /* Adjust line spacing */
+    padding: 20px;                 /* Add padding around text */
+    color: #333;                   /* Text color */
+        
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.para p {
+    margin: 0;                     /* Remove default margin on <p> */
+    max-width: 600px;              /* Optional: Limit width for readability */
+}
+
+
+
+.navitems {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    color: #666;
+    cursor: pointer;
+}
