@@ -92,7 +92,8 @@ header {
 }
 
 .weave-button {
-    margin-top: 30px;
+    position: relative;
+    margin-top: 250px;
     padding: 15px 30px;
     font-size: 1.2em;
     background-color: #359381;
@@ -100,7 +101,7 @@ header {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
 }
 
 .weave-button:hover {
