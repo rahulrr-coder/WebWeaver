@@ -1,17 +1,37 @@
-// server/src/index.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Use environment port or default to 5000
 
-app.use(cors()); // Enable CORS
-app.use(express.json()); // Parse JSON bodies
+// Function to find an available port
+const findAvailablePort = async (startPort) => {
+  const net = require('net');
+  
+  return new Promise((resolve, reject) => {
+    const server = net.createServer();
+    
+    server.listen(startPort, () => {
+      const { port } = server.address();
+      server.close(() => resolve(port));
+    });
 
-// MongoDB Atlas connection
-const mongoURI = process.env.MONGODB_URI; // Your MongoDB connection string
+    server.on('error', (err) => {
+      if (err.code === 'EADDRINUSE') {
+        resolve(findAvailablePort(startPort + 1));
+      } else {
+        reject(err);
+      }
+    });
+  });
+};
+
+app.use(cors());
+app.use(express.json());
+
+const mongoURI = process.env.MONGODB_URI;
+
 mongoose.connect(mongoURI)
   .then(() => {
     console.log('MongoDB connected');
@@ -20,17 +40,20 @@ mongoose.connect(mongoURI)
     console.error('MongoDB connection error:', err);
   });
 
-// A simple route to test server communication
 app.get('/', (req, res) => {
   res.send('Hello, World! The server is running and connected to MongoDB.');
 });
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Start the server with automatic port finding
+const startServer = async () => {
+  try {
+    const port = await findAvailablePort(process.env.PORT || 5000);
+    app.listen(port, () => {
+      console.log(`Server is running on http://localhost:${port}`);
+    });
+  } catch (err) {
+    console.error('Error starting server:', err);
+  }
+};
 
-
-
-
-
+startServer();
