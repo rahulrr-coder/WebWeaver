@@ -102,6 +102,11 @@ header {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+/* Apply drop-shadow to an image */
+/* filter: drop-shadow(offsetX offsetY blurRadius spreadRadius color);
+ */
+    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.5));
+
 }
 
 .weave-button:hover {
