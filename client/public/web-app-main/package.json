@@ -1,5 +1,5 @@
 {
-    "name": "portfolio-space",
+    "name": "Webweaver",
     "version": "1.0.0",
     "description": "Portfolio website creator for Developers",
     "main": "index.html",
@@ -7,7 +7,7 @@
         "pretty": "prettier --write \"./**/*.{js,json,css,html}\"",
         "build": "npx tailwindcss -i public/global.css -o public/app.css --watch"
     },
-    "author": "Alwin Sunil, Anam Ashraf, Siva Ganesh",
+    "author": "Dharun, Vigneshwaran, Rahul, Vishal",
     "license": "ISC",
     "devDependencies": {
         "prettier": "^3.0.3",
