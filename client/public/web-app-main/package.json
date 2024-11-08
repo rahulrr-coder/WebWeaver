@@ -1,13 +1,13 @@
 {
-    "name": "portfolio-space",
+    "name": "website-space",
     "version": "1.0.0",
-    "description": "Portfolio website creator for Developers",
+    "description": "Website Builder for non-tech people",
     "main": "index.html",
     "scripts": {
         "pretty": "prettier --write \"./**/*.{js,json,css,html}\"",
         "build": "npx tailwindcss -i public/global.css -o public/app.css --watch"
     },
-    "author": "Alwin Sunil, Anam Ashraf, Siva Ganesh",
+    "author": "Dharun, Rahul, Vishal, Vigneshwaran",
     "license": "ISC",
     "devDependencies": {
         "prettier": "^3.0.3",
