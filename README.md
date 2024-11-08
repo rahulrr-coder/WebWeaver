@@ -1,6 +1,6 @@
 # WebWeaver 🕸️
 
-WebWeaver is an intuitive website building platform that empowers non-technical users to create stunning websites through a drag-and-drop interface and pre-built templates. Just like a spider weaves its web, WebWeaver helps you weave your perfect website!
+WebWeaver is an intuitive website-building platform that empowers non-technical users to create stunning websites through a drag-and-drop interface and pre-built templates. Like a spider weaves its web, WebWeaver helps you weave your perfect website!
 
 ## 🌟 Features
 
@@ -45,9 +45,6 @@ WebWeaver is an intuitive website building platform that empowers non-technical 
 
 - JWT-based authentication
 - Password encryption
-- CSRF protection
-- Rate limiting
-- XSS prevention
 - Secure Google OAuth2.0 integration
 
 
