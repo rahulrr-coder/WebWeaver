@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Weaver</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <header>
+        <h2 class="logo"></h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="parallax">
+        <h2 id="text"></h2>
+        <img src="./assets/hill1.png" id="hill1" alt="hill">
+        <img src="./assets/hill2.png" id="hill2" alt="hill">
+        <img src="./assets/hill3.png" id="hill3" alt="hill">
+        <img src="./assets/hill4.png" id="hill4" alt="hill">
+        <img src="./assets/hill5.png" id="hill5" alt="hill">
+        <img src="./assets/tree.png" id="tree" alt="tree">
+        <h2 id="text2">Web Weaver</h2>
+        <button onclick="window.location.href = './web-app-main/index7.html'" id="weave-button" >Weave Your Own Website</button>
+
+        <img src="./assets/leaf.png" id="leaf" alt="leaf">
+        <img src="./assets/plant.png" id="plant" alt="plant">
+    </section>
+
+    <section class="sec">
+        <h2>Web Weaver</h2>
+        
+        <p>
+            Welcome to WebWeaver. Ever wished making a website could be as easy as telling a story? Well, that's exactly why we created WebWeaver! ✨ <br> Your website dreams, without the tech  headaches. No coding required – seriously!  
+                
+        </p>
+
+        <br>
+        <a href="javascript:void(0);" id="chatbot-link">
+            <img src="assets/chatbot.png" alt="chat" id="chatbot">
+        </a>
+
+        <!-- Initially hidden iframe -->
+        <div id="chatbot-container" style="display:none;">
+            <iframe id="chatbot-iframe" width="400" height="600" style="border:none;"></iframe>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+     
+
+</body>
+
+
+</html>
