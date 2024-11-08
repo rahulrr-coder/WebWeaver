@@ -7,7 +7,7 @@
         "pretty": "prettier --write \"./**/*.{js,json,css,html}\"",
         "build": "npx tailwindcss -i public/global.css -o public/app.css --watch"
     },
-    "author": "Alwin Sunil, Anam Ashraf, Siva Ganesh",
+    "author": "Dharun, rahul , vishal , vignesh",
     "license": "ISC",
     "devDependencies": {
         "prettier": "^3.0.3",
