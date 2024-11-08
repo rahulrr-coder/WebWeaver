@@ -4,15 +4,8 @@ WebWeaver is an intuitive website building platform that empowers non-technical 
 
 ## 🌟 Features
 
-- **No-Code Website Builder**
-  - Drag-and-drop interface
-  - Real-time preview
-  - Responsive design tools
-  - Custom domain integration
-
 - **Template Library**
   - Professional pre-built templates
-  - Industry-specific designs
   - Customizable layouts
   - Mobile-responsive templates
 
@@ -24,8 +17,7 @@ WebWeaver is an intuitive website building platform that empowers non-technical 
 
 - **User Authentication**
   - Secure Google Sign-In integration
-  - Email authentication
-  - Password recovery system
+  - Email Authentication
   - Session management
 
 ## 🛠️ Technologies Used
