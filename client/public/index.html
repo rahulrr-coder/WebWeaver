@@ -42,7 +42,14 @@
         </p>
 
         <br>
-        <p><a href="indexe.html"> Access chatbot here</a></p>
+        <a href="javascript:void(0);" id="chatbot-link">
+            <img src="assets/chatbot.png" alt="chat" id="chatbot">
+        </a>
+
+        <!-- Initially hidden iframe -->
+        <div id="chatbot-container" style="display:none;">
+            <iframe id="chatbot-iframe" width="400" height="600" style="border:none;"></iframe>
+        </div>
     </section>
 
     <script src="script.js"></script>

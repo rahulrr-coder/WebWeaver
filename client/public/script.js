@@ -39,3 +39,14 @@ navLinks.forEach(link => {
         });
     });
 });
+// JavaScript to handle the image click and load the iframe
+document.getElementById('chatbot-link').addEventListener('click', function() {
+    // Display the iframe container
+    document.getElementById('chatbot-container').style.display = 'block';
+
+    // Set the source of the iframe (chatbot page)
+    document.getElementById('chatbot-iframe').src = 'indexe.html'; // or your chatbot URL
+
+    // Optionally, you can change the image or hide it after the click
+    document.getElementById('chatbot-image').style.display = 'none'; // Hide the image after click
+});
