@@ -43,7 +43,7 @@ href="https://github.com/rahulrr-coder/WebWeaver.git" target="_blank" rel="noref
 <a href="https://github.com/rahulrr-coder" target="_blank" rel="noopener noreferrer" class="text-gray-700 underline transition hover:text-gray-700/75">Rahul</a>, 
 <a href="https://github.com/vishalm342" target="_blank" rel="noopener noreferrer" class="text-gray-700 underline transition hover:text-gray-700/75">Vishal</a>.
 <a href="https://github.com/Vigneshwaran-star/Vigneshwaran-star" target="_blank" rel="noopener noreferrer" class="text-gray-700 underline transition hover:text-gray-700/75">Vigneshwaran</a>.
-</p><p class="text-s/relaxed text-gray-500">© Portfolio Space 2023. All rights reserved.</p></div></footer>`
+</p><p class="text-s/relaxed text-gray-500">© Web Weaving Space 2024. All rights reserved.</p></div></footer>`
 
 const footerNode = document.createElement("footer")
 footerNode.innerHTML = footerSection
